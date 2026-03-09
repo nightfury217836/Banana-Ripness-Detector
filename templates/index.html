@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Ripeness Detector 🍌</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+        
+        <div class="title-box">
+            🍌 Banana Ripeness Detector
+        </div>
+
+        <!-- Preview / Output Image (Same Box) -->
+        <div class="preview-box">
+            <img id="previewImage">
+        </div>
+
+        <div class="button-group">
+            <input type="file" id="imageInput" accept="image/*" hidden>
+
+            <button type="button"
+                onclick="document.getElementById('imageInput').click()">
+                ⬆️ Upload Image
+            </button>
+
+            <button type="button" onclick="uploadImage()">
+                🔍 Analyze
+            </button>
+        </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+        <div class="output-box" id="result">
+            Analysis result will appear here...
+        </div>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

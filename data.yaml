@@ -1,0 +1,11 @@
+path: dataset
+train: train/images
+val: valid/images
+
+names:
+  0: ripe
+  1: overripe
+  2: freshripe
+  3: freshunripe
+  4: rotten
+  5: unripe
